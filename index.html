@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-        <title>Document</title>
+    <title>Document</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Header & navigation -->
-    <header class="main_header">
+    <header id="main_header">
         <!-- Logo Company -->
         <div class="logo_company"></div>
 
         <nav>
-            <a href="#" class="border_left">Home</a>
-            <a href="#">Our Packages</a>
-            <a href="#" class="border_right">Call Us</a>
+            <a href="#main_header" class="border_left">Home</a>
+            <a href="#our_package_section">Our Packages</a>
+            <a href="#call_us_section" class="border_right">Call Us</a>
         </nav>
     </header>
 
@@ -31,10 +31,27 @@
         </header>
 
         <section class="main_content">
-            <!-- Banner Auto Slide -->
             <aside class="main_container_left">
-                <p>Banner auto slide</p>
-                <p><i>"Discover the World's Beauty With Us"</i></p>
+                <!-- Banner Auto Slide -->
+                <div class="main-banner banner-img-1"></div>
+                <div class="main-banner banner-img-2"></div>
+                <div class="main-banner banner-img-3"></div>
+            
+                <!-- review customer -->
+                <div class="review_container">
+                    <div class="review_text">
+                        "Smooth and enjoyable trip! Thanks, Onederer."
+                    </div>
+                    <div class="review_author">
+                        <div class="author_avatar"></div>
+                        <div class="author_info">
+                            <div class="author_name">Siti Rahayu</div>
+                            <div class="author_details">Karyawan Swasta, 28</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p><i>"Discover the Beauty of Indonesia with Us"</i></p>
                 <ol id="benefit_list">
                     <li>Embark on thrilling adventures with our expertly guided tours, designed to push your boundaries and ignite your passion for exploration.</li>
                     <li>Indulge in unparalleled luxury and personalized service with our exclusive travel packages, tailored to exceed your highest expectations.</li>
@@ -45,28 +62,41 @@
 
              <!-- Form Contact Us -->
             <aside class="main_container_right">
-                <h3>Contact us</h3>
-                <form action="" method="post">
-                    <label for="name">Your Name:</label><br>
-                    <input type="text" id="name"><br>
+                <h2>Contact us</h2>
+                <form id="validation_form">
+                    <div class="form_colomn">
+                        <label for="name_input">Your Name:</label><br>
+                        <input type="text" id="name_input" placeholder="First and last name"><br>
+                    </div>
+                    
+                    <div class="form_colomn">
+                        <label for="email_input">Email address:</label><br>
+                        <input type="email" id="email_input" placeholder="example@email.com"><br>
+                    </div>
+                    
+                    <div class="form_colomn">
+                        <label for="option_input">What are you interested in?</label><br>
+                        <select id="option_input">
+                            <option value="">Select option</option>
+                            <option value="bali">Bali</option>
+                            <option value="semarang">Semarang</option>
+                            <option value="surabaya">Surabaya</option>
+                            <option value="yogyakarta">Yogyakarta</option>
+                            <option value="komodo_island">Komodo Island</option>
+                            <option value="dieng_plateau">Dieng Plateau</option>
+                        </select><br>
+                    </div>
+                    
+                    <div class="form_colomn">
+                        <button type="button" onclick="validateForm();">Submit</button>
+                    </div>
                 
-                    <label for="email">Email address:</label><br>
-                    <input type="email" id="email"><br>
-                
-                    <label for="option">What are you interested in?</label><br>
-                    <select id="option">
-                      <option>Opsi 1</option>
-                      <option>Opsi 2</option>
-                      <option>Opsi 3</option>
-                    </select><br>
-                
-                    <input type="submit" value="Kirim">
                   </form>
             </aside>
         </section>
 
         <!-- Our packages section -->
-        <section>
+        <section id="our_package_section">
             <header class="header_content">
                 <h2>Our Packages</h2>
             </header>
@@ -93,21 +123,24 @@
         <section class="package_option">
             <div class="sub_package_option">
                 <h2>Yogyakarta</h2>
-                <p>Delve into the heart of Javanese culture in Yogyakarta. Explores ancient temples like Borobudur and Prambanan, traditional batik workshops, and a taste of local cuisine.</p>
+                <p>Delve into the heart of Javanese culture in Yogyakarta. Explores ancient temples, and a taste of local cuisine.</p>
             </div>
             
             <div class="sub_package_option">
                 <h2>Komodo Island</h2>
-                <p>Embark on a thrilling adventure to Komodo National Park. Offers the chance to see Komodo dragons in their natural habitat, along with world-class diving and snorkeling experiences.</p>
+                <p>Embark on a thrilling adventure to Komodo National Park along with world-class diving and snorkeling experiences.</p>
             </div>
             
             <div class="sub_package_option">
-                <h2>Lake Toba</h2>
-                <p>Discover the serene beauty of Lake Toba and the unique culture of the Batak people. Explores traditional villages, scenic viewpoints, and the refreshing climate of the highlands.</p>
+                <h2>Dieng Plateau</h2>
+                <p>Experience the magical sunrise at Sikunir Hill, explore ancient temples, and witness the geothermal wonders of Dieng.</p>
             </div>
         </section>
+
+        <hr>
+
          <!-- Call us section -->
-        <section class="call_us_section">
+        <section id="call_us_section">
             <header>
                 <h2>Your Adventure Starts Now, Book Your Dream Trip Today!</h2>
             </header>
@@ -116,8 +149,8 @@
                 <p>Discover the world's hidden gems and create memories that will last a lifetime. Our exclusive travel packages offer unique experiences, insider access, and unbeatable value. Don't just travel, experience the extraordinary and book your adventure now.</p>
             </article>
 
-            <h2>Call us now</h2>
-
+            <h2></h2>
+            <button type="button">Call us now</button>
         </section>
 
     </main>
@@ -129,6 +162,9 @@
         <p>Terms of Service &emsp; privacy policy</p>
         <p>2025 &emsp; Onederer</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

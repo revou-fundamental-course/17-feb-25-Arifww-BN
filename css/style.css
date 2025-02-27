@@ -1,14 +1,25 @@
 /* CSS enternal */
 
-.main_header{
+body{
+    background: linear-gradient(to top, #a8dadc, #d1d1d1);
+    font-family: Garamond;
+    width: 1020px;
+    margin: auto;
+    color: #333;
+}
+
+#main_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+    padding-bottom: 0px;
 }
+
 .logo_company{
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/100);
+    background-image: url(../assets/logo.jpg);
     background-size: cover;
     border-radius: 80%;
 }
@@ -18,9 +29,10 @@ nav{
 
 nav>a{
     border: 1px solid;
-    color: black;
+    color: #333;
     padding: 6px;
     text-decoration: none;
+    padding: 8px 12px;
 }
 
 .border_left{
@@ -38,52 +50,235 @@ nav>a{
 }
 
 .header_content{
-    border: 1px solid;
     text-align: center;
+    color: #333;
 }
 
 .main_content{
     display:flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
 }
 
 .main_container_left{
-    border: 1px solid;
-    height: 700px;
-    width: 60%;
+    width: 800px;
     align-content: center;
     text-align: center;
+    padding: 10px;
 }
 
-.main_container_right{
-    border: 1px solid;
-    height: 700px;
-    width: 40%;
-    align-content: center;
-    text-align: center;
+.main-banner {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.banner-img-1 {
+    background-image: url(../assets/bali.jpg);
+}
+
+.banner-img-2 {
+    background-image: url(../assets/dieng_plateau.jpg);
+}
+
+.banner-img-3 {
+    background-image: url(../assets/komodo_island.jpg);
+}
+
+.banner-img-4 {
+    background-image: url(../assets/semarang.jpg);
+}
+
+.banner-img-5 {
+    background-image: url(../assets/surabaya.jpg);
+}
+
+.banner-img-6 {
+    background-image: url(../assets/yogyakarta.jpg);
+}
+
+/* review customer */
+.review_container {
+    margin: 12px;
+    width: auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: justify;
+}
+
+.review_text {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review_author {
+    display: flex;
+    align-items: center;
+}
+
+.author_avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd; /* Placeholder avatar */
+    margin-right: 15px;
+}
+
+.author_name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.author_details {
+    font-size: 0.9em;
+    color: #888;
 }
 
 #benefit_list{
     text-align: justify;
     padding-right: 30px;
+    color: #333;
 }
+
+.main_container_right{
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+}
+
+.main_container_right h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#validation_form{
+    margin: 5px;
+    width: auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: justify;
+}
+
+.form_colomn {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.form_colomn label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form_colomn input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form_colomn select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #818181;
+}
+
+.form_colomn button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form_colomn button:hover {
+    background-color: #45a049;
+}
+
 
 .package_option{
     display:flex;
 }
 
 .sub_package_option{
-    border: 1px solid;
     flex: 1;
-    text-align: justify;
+    flex-direction: row;
+    margin: 5px;
+    width: auto;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
+    text-align: justify;
 }
 
-.call_us_section{
+#call_us_section{
     text-align: center;
+}
+
+#call_us_section button{
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 16px;
 }
 
 .footer_section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 720px){
+    body{
+        width: 720px;
+    }
+    .main_container_left{
+        width: 600px;
+    }
+    .main-banner {
+        height: 300px;
+    }
+    .main_container_right{
+        width: 250px;
+    }
+}
+    
+/* Responsive Design */
+@media only screen and (max-width: 480px){
+    body{
+        width: 480px;
+    }
+    .main_content {
+        flex-direction: column;
+    }
+    .package_option{
+        flex-direction: column;
+    }
 }
