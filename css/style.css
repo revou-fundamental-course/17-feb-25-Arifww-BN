@@ -1,5 +1,4 @@
 /* CSS enternal */
-
 body{
     background: linear-gradient(to top, #a8dadc, #d1d1d1);
     font-family: Garamond;
@@ -7,7 +6,6 @@ body{
     margin: auto;
     color: #333;
 }
-
 #main_header{
     display: flex;
     justify-content: space-between;
@@ -15,7 +13,7 @@ body{
     padding: 10px;
     padding-bottom: 0px;
 }
-
+/* setting logo  */
 .logo_company{
     height: 50px;
     width: 50px;
@@ -23,10 +21,10 @@ body{
     background-size: cover;
     border-radius: 80%;
 }
+/* setting navigation  */
 nav{
     display: flex;
 }
-
 nav>a{
     border: 1px solid;
     color: #333;
@@ -34,71 +32,62 @@ nav>a{
     text-decoration: none;
     padding: 8px 12px;
 }
-
 .border_left{
     border-top-left-radius: 6px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 6px;
 }
-
 .border_right{
     border-top-left-radius: 0px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 0px;
 }
-
+/* setting header  */
 .header_content{
     text-align: center;
     color: #333;
 }
-
+/* setting main content  */
 .main_content{
     display:flex;
     flex-direction: row;
     height: auto;
     justify-content: center;
 }
-
+/* setting left container  */
 .main_container_left{
     width: 800px;
     align-content: center;
     text-align: center;
     padding: 10px;
 }
-
+/* setting for autoslide  */
 .main-banner {
     height: 600px;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
 }
-
 .banner-img-1 {
     background-image: url(../assets/bali.jpg);
 }
-
 .banner-img-2 {
     background-image: url(../assets/dieng_plateau.jpg);
 }
-
 .banner-img-3 {
     background-image: url(../assets/komodo_island.jpg);
 }
-
 .banner-img-4 {
     background-image: url(../assets/semarang.jpg);
 }
-
 .banner-img-5 {
     background-image: url(../assets/surabaya.jpg);
 }
-
 .banner-img-6 {
     background-image: url(../assets/yogyakarta.jpg);
 }
-
 /* review customer */
 .review_container {
     margin: 12px;
@@ -109,54 +98,49 @@ nav>a{
     padding: 10px;
     text-align: justify;
 }
-
 .review_text {
     margin-bottom: 20px;
     color: #333;
 }
-
 .review_author {
     display: flex;
     align-items: center;
 }
-
 .author_avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #ddd; /* Placeholder avatar */
+    background-image: url(../assets/foto_profil.jpg);
+    background-size: cover;
     margin-right: 15px;
 }
-
 .author_name {
     font-weight: bold;
     color: #333;
     margin-bottom: 5px;
 }
-
 .author_details {
     font-size: 0.9em;
     color: #888;
 }
-
+/* benefit list  */
 #benefit_list{
     text-align: justify;
     padding-right: 30px;
     color: #333;
 }
-
+/* setting container right  */
 .main_container_right{
     width: 280px;
     text-align: center;
     padding: 10px;
 }
-
 .main_container_right h2{
     text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
-
+/* setting form  */
 #validation_form{
     margin: 5px;
     width: auto;
@@ -166,7 +150,6 @@ nav>a{
     padding: 10px;
     text-align: justify;
 }
-
 .form_colomn {
     margin-bottom: 5px;
     display: flex;
@@ -174,14 +157,12 @@ nav>a{
     align-items: flex-start;
     padding: 10px;
 }
-
 .form_colomn label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #555;
 }
-
 .form_colomn input {
     width: 100%;
     padding: 12px;
@@ -190,7 +171,6 @@ nav>a{
     box-sizing: border-box;
     font-size: 16px;
 }
-
 .form_colomn select{
     width: 100%;
     padding: 12px;
@@ -200,7 +180,6 @@ nav>a{
     font-size: 16px;
     color: #818181;
 }
-
 .form_colomn button{
     background-color: #4CAF50;
     color: white;
@@ -211,16 +190,13 @@ nav>a{
     width: 100%;
     font-size: 16px;
 }
-
 .form_colomn button:hover {
     background-color: #45a049;
 }
-
-
+/* package option section  */
 .package_option{
     display:flex;
 }
-
 .sub_package_option{
     flex: 1;
     flex-direction: row;
@@ -232,11 +208,10 @@ nav>a{
     padding: 10px;
     text-align: justify;
 }
-
+/* call us section  */
 #call_us_section{
     text-align: center;
 }
-
 #call_us_section button{
     background-color: #333;
     color: white;
@@ -247,14 +222,14 @@ nav>a{
     width: 30%;
     font-size: 16px;
 }
-
+/* footer section  */
 .footer_section{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
 }
-
+/* Responsive Design for device with max width 720px*/
 @media only screen and (max-width: 720px){
     body{
         width: 720px;
@@ -269,16 +244,26 @@ nav>a{
         width: 250px;
     }
 }
-    
-/* Responsive Design */
+/* Responsive Design for device with max width 480px*/
 @media only screen and (max-width: 480px){
     body{
         width: 480px;
     }
     .main_content {
         flex-direction: column;
+        align-items: center;
+    }
+    .main_container_left{
+        width: 460px;
+    }
+    .main-banner {
+        height: 270px;
     }
     .package_option{
         flex-direction: column;
+        align-items: center;
+    }
+    .sub_package_option{
+        width: 400px;
     }
 }
