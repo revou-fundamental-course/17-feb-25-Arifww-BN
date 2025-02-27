@@ -235,13 +235,13 @@ nav>a{
         width: 720px;
     }
     .main_container_left{
-        width: 600px;
+        width: 500px;
     }
     .main-banner {
-        height: 300px;
+        height: 340px;
     }
     .main_container_right{
-        width: 250px;
+        width: 270px;
     }
 }
 /* Responsive Design for device with max width 480px*/
