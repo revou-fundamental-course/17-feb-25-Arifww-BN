@@ -6,21 +6,21 @@ function validateForm() {
     let optionInput = document.getElementById('option_input');
     // Validation setting
     if (nameInput.value == '' && emailInput.value == '' && optionInput.value == '') {
-        alert('Nama, email, option tidak boleh kosong');
+        alert('Please fill in your name, email, and options');
     }else if (nameInput.value == '' && emailInput.value == '') {
-        alert('Nama dan email tidak boleh kosong');
+        alert('Please fill in your name and email');
     }else if (emailInput.value == '' && optionInput.value == '') {
-        alert('email dan option tidak boleh kosong');
+        alert('Please fill in your email and options');
     }else if (nameInput.value == '' && optionInput.value == '') {
-        alert('Nama dan option tidak boleh kosong');
+        alert('Please fill in your name and options');
     }else if (nameInput.value == '') {
-        alert('Nama tidak boleh kosong');
+        alert('Please fill in your name');
     }else if(emailInput.value == '') {
-        alert('Email tidak boleh kosong');
+        alert('Please fill in your email');
     }else if(optionInput.value == '') {
-        alert('dipilih salah satu');
+        alert('Please fill in your options');
     }else{
-        alert('Form berhasil dikirim!');
+        alert('Form submitted successfully!');
     }
 }
 // For Index Identifier
